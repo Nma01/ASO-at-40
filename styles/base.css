@@ -1,0 +1,137 @@
+/* Global Styles for All Pages */
+
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap');
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fefefe;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #2d2d2d;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Wrapper pushes footer to the bottom */
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar Styles */
+
+header .navbar {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #003366;
+  padding: 10px 0;
+}
+
+.navbar .navbar-brand {
+  color: #d4af37;
+  font-size: 25px;
+}
+
+.navbar .nav-item .nav-link {
+  text-decoration: none;
+  /* color: white; */
+}
+
+.navbar .nav-item .nav-link:hover {
+    /* color: red; */
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+
+
+.navbar-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar .nav-item {
+  margin-bottom: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  padding: 5px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: #d4af37; /* Gold */
+  color: #003366;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-primary:hover {
+  background-color: #e6c200;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #002244;
+}
+
+/* Media Queries */
+/* @media screen and (min-width: 896px) {
+  .hero-split {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+} */

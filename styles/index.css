@@ -1,0 +1,48 @@
+/* Page-specific styles for the Home page */
+
+/* Hero Section with Image */
+.hero-split {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-split .text {
+  min-width: 280px;
+}
+
+.hero-split .image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-split .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* icons */
+.fas {
+  color: #d4af37; /* Gold, for icon color consistency */
+  font-size: 1.2rem; /* Make icons consistent in size */
+}
+
+.fas:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+
+
+
+/* media queries */
+@media screen and (min-width: 896px) {
+  .hero-split {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+}
