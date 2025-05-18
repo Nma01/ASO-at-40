@@ -1,6 +1,6 @@
 # ASO-at-40: Celebrating a Milestone
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-site-id/deploy-status)](https://aso-at-40.netlify.app/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85cd3376-71c9-4fb6-9aed-9edd0e2502ae/deploy-status)](https://aso-at-40.netlify.app/)
 
 A celebratory website built to provide information to guests for Aso's 40th birthday event and to enable them to RSVP, facilitating appropriate planning for the celebration.
 
