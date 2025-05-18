@@ -1,16 +1,7 @@
 /* Page-specific styles for the About page */
 
 /* About Page Main Content Styles */
-h2 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 32px;
-  color: #2d2d2d;
-}
 
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
 
 .hero-split {
   display: flex;

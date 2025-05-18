@@ -1,0 +1,84 @@
+/* Page-specific styles for the Home page */
+
+/* Hero Section with Image */
+.hero-split {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .hero-split .text {
+    min-width: 50%;
+    height: 100vh;
+  }
+  
+  .hero-split .image {
+    flex: 1;
+    min-width: 50%;
+    text-align: center;
+  }
+  
+  .hero-split .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  /* icons */
+  .fas {
+    color: #d4af37; 
+      /*  */
+      color: #003366;
+      color: #013c76;
+      /*  */
+    font-size: 1.0rem; 
+    margin-right: 5px;
+  }
+  .fas:last-child{
+    margin-right: 2px;
+  }
+  .fas:hover {
+    /* color: #ffd700;  */
+  }
+  
+  /* q's */
+  
+  .questions {
+    margin: 25px 0;
+  }
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+
+  }
+  .question h6 {
+    font-weight: 600;
+    font-size: 15px;
+    color: #03386d;
+  }
+ 
+  .answer {
+    color: #013c76;
+    margin: 3px 0;
+    line-height: 1.5;
+    /* text-wrap: balance; */
+    font-weight: 400;
+    font-size: 14px;
+    display: none;
+  }
+
+  /*  */
+  
+  /* media queries */
+  @media screen and (min-width: 896px) {
+    .hero-split {
+      flex-direction: row;
+      align-items: center;
+      gap: 40px;
+    }
+  }

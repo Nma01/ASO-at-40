@@ -27,12 +27,19 @@
 
 /* icons */
 .fas {
-  color: #d4af37; /* Gold, for icon color consistency */
-  font-size: 1.2rem; /* Make icons consistent in size */
+  color: #d4af37; 
+    /*  */
+    color: #003366;
+    color: #013c76;
+    /*  */
+  font-size: 1.0rem; 
+  margin-right: 5px;
 }
-
+.fas:last-child{
+  margin-right: 2px;
+}
 .fas:hover {
-  color: #ffd700; /* Gold color on hover */
+  /* color: #ffd700;  */
 }
 
 

@@ -9,6 +9,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #fefefe;
   color: #333;
+  /*  */
+  color: #003366;
+  /*  */
   line-height: 1.6;
 }
 
@@ -19,9 +22,20 @@ h4,
 h5,
 h6 {
   font-family: 'Poppins', sans-serif;
-  color: #2d2d2d;
+  /* color: #2d2d2d; */
+  /*  */
+  color: #003366;
+  /*  */
 }
-
+.text h4, .text h5{
+  color: #003366;
+}
+p{
+    /*  */
+    color: #013c76;
+    
+    /*  */
+}
 .container {
   width: 90%;
   max-width: 1100px;
@@ -38,28 +52,52 @@ h6 {
 /* Navbar Styles */
 
 header .navbar {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding: 10px;
 }
 
 .navbar {
-  background-color: #003366;
+  /* background-color: #003366; */
   padding: 10px 0;
+ 
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand  {
   color: #d4af37;
   font-size: 25px;
-}
+  /*  */
+  color: #003366;
+  font-weight: 800;
+  margin-top: 15px;
 
+
+}
+.navbar .navbar-brand:hover{
+  color: inherit;
+}
 .navbar .nav-item .nav-link {
   text-decoration: none;
-  /* color: white; */
+  color: white;
+  padding-left: 5px;
+    /*  */
+    color: #003366;
+    /*  */
 }
 
-.navbar .nav-item .nav-link:hover {
-    /* color: red; */
+
+.navbar-nav .nav-item .nav-link.active {
+  background-color: #003366;
+  color: white;
+  border-radius: 4px; 
 }
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+  background-color: transparent;
+  border: 1px solid #003366;
+  border-radius: 4px;
+}
+
 
 .navbar .nav-links {
   list-style: none;
@@ -78,6 +116,34 @@ header .navbar {
   margin-bottom: 10px;
 }
 
+
+.btn-primary {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #003366;
+  /*  */
+  background-color: #003366;
+  color: white;
+  /*  */
+  padding: 7px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+  /* background-color: #e6c200; */
+  /*  */
+  color: #003366;
+  background-color: white;
+  border: 1px solid #003366;
+  outline: none;
+  /*  */
+
+}
+
+/* footer */
 /* Footer Styles */
 footer {
   background-color: #003366;
@@ -86,52 +152,45 @@ footer {
 }
 
 footer p {
-  padding: 5px;
-  font-size: 12px;
+  /* padding: 5px; */
+  font-size: 10px;
+  color :white;
 }
 
-.btn-primary {
-  display: inline-block;
-  background-color: #d4af37; /* Gold */
-  color: #003366;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
+
+
+.footer-contact p,
+.footer-copy p {
+  margin: 0.5rem 0;
+}
+/* --- Footer icon size --- */
+footer .footer-contact i {
+  font-size: 0.7rem;    
+  vertical-align: middle; 
+  margin-right: 1px;     
+  color: white; 
+}
+
+
+
+.footer-contact{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.footer-contact a {
+  color: #fff;
   text-decoration: none;
 }
 
-.btn-primary:hover {
-  background-color: #e6c200;
+.footer-contact a:hover {
+  text-decoration: underline;
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0 20px 0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-button {
-  background-color: #003366;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #002244;
-}
 
 /* Media Queries */
-/* @media screen and (min-width: 896px) {
-  .hero-split {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 40px;
+@media screen and (min-width: 896px) {
+  .navbar {
+    margin: 0 20px;
   }
-} */
+}

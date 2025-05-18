@@ -12,70 +12,204 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Shared Styles -->
+    <link rel="stylesheet" href="styles/base.css" />
+
+    <!-- Page-Specific Styles -->
+    <link rel="stylesheet" href="styles/faq.css" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome  -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <div class="container">
-        <h1 class="logo">🎉 ASO@40</h1>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="event-details.html">Event Details</a></li>
-          <li><a href="gifts.html">Gifts</a></li>
-          <li><a href="accommodation.html">Accommodation</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="rsvp.html">RSVP</a></li>
-          <li><a href="faq.html">FAQs</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- main content -->
-    <main class="container">
-      <h2>FAQs</h2>
+    <div class="containerr page-wrapper">
+      <!-- Navigation -->
 
-      <div class="faq">
-        <h3>Where is the party?</h3>
-        <p>The Grand Hall, Main Street</p>
-        
-        <h3>What’s the dress code or color of the day?</h3>
-        <p>The color of the day is Royal Blue and Gold. Dress to impress!</p>
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <p class="navbar-brand" href="#">ASO@40</p>
 
-        <h3>Can I bring a guest?</h3>
-        <p>
-          Yes, you're welcome to bring one guest. Please let us know via the
-          RSVP form.
-        </p>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <!-- <span
+              class="navbar-toggler-icon"
+              style="
+                background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27%23d4af37%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+              "
+            ></span> -->
+            <span
+              class="navbar-toggler-icon"
+              style="
+                background-image: url('data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3E%3Cpath stroke=%27%23003366%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');
+              "
+            ></span>
+          </button>
 
-        <h3>What time should I arrive?</h3>
-        <p>
-          Plan to arrive by 5:45 PM. The event officially begins at 6:00 PM.
-        </p>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About ASO</a>
+              </li>
 
-        <h3>Is parking available?</h3>
-        <p>Yes, the venue has ample free parking for guests.</p>
+              <li class="nav-item">
+                <a class="nav-link" href="./rsvp.html">RSVP</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="./gifts.html">Gifts</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="./accommodation.html"
+                  >Accommodation</a
+                >
+              </li>
 
-        <h3>Are kids allowed?</h3>
-        <p>Yes, kids are welcome! Let us know if you're bringing any.</p>
+              <li class="nav-item">
+                <a class="nav-link active" href="./faq.html">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Main Content -->
+      <main class="container">
+        <!-- Hero Section with Image -->
+        <section class="hero-split">
+          <div class="text">
+            <h4>FAQs</h4>
+            <div class="questions">
+              <div class="question">
+                <h6>Where is the party?</h6>
+                <img
+                  class="toggle"
+                  src="./images/plus.svg"
+                  width="25"
+                  alt="plus icon"
+                />
+              </div>
+              <p class="answer">
+                The Grand Hall, Main Street, Middlesbrough.
+              </p>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <h6>What’s the dress code or color of the day?</h6>
+                <img
+                  class="toggle"
+                  src="./images/plus.svg"
+                  width="25"
+                  alt="plus icon"
+                />
+              </div>
+              <p class="answer">
+                The color of the day is Royal Blue and White. Dress to impress!
+              </p>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <h6>What time should I arrive?</h6>
+                <img
+                  class="toggle"
+                  src="./images/plus.svg"
+                  width="25"
+                  alt="plus icon"
+                />
+              </div>
+              <p class="answer">
+                Plan to arrive by 5:45 PM. The event officially begins at 6:00 PM.
+              </p>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <h6>Is parking available?</h6>
+                <img
+                  class="toggle"
+                  src="./images/plus.svg"
+                  width="25"
+                  alt="plus icon"
+                />
+              </div>
+              <p class="answer">
+                Yes, the venue has ample free parking for guests.
+              </p>
+            </div>
+            <div class="questions">
+              <div class="question">
+                <h6>Who do I contact for more info?</h6>
+                <img
+                  class="toggle"
+                  src="./images/plus.svg"
+                  width="25"
+                  alt="plus icon"
+                />
+              </div>
+              <p class="answer">
+                Reach out to Tunde Phillips at +44 7487 893 217 or send an email to 1phillipstunde@gmail.com.
+              </p>
+            </div>
+          </div>
 
-        <h3>Will food and drinks be served?</h3>
-        <p>
-          Absolutely. There will be a full dinner buffet and a variety of
-          drinks.
-        </p>
+          <div class="image">
+            <img
+              class="home-img"
+              src="images/aso1.jpg"
+              alt="Aso, the celebrant"
+            />
+          </div>
+        </section>
+      </main>
 
-        <h3>Who do I contact for more info?</h3>
-        <p>
-          Reach out to [Organizer’s Name] at [Phone Number] or [Email Address].
-        </p>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>© 2025 ASO's 40th Birthday Celebration</p>
-    </footer>
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content">
+          <div class="footer-contact">
+            <p>Reach out!</p>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+447487893217">+44 7487 893 217</a>
+            </p>
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:1phillipstunde@gmail.com"
+                >1phillipstunde@gmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="faq.js"></script>
   </body>
 </html>
