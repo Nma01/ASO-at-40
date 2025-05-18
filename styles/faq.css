@@ -9,7 +9,7 @@
   
   .hero-split .text {
     min-width: 50%;
-    height: 100vh;
+    /* height: 100vh; */
   }
   
   .hero-split .image {
@@ -80,5 +80,10 @@
       flex-direction: row;
       align-items: center;
       gap: 40px;
+    }
+
+    .hero-split .text {
+      min-width: 50%;
+      height: 100vh;
     }
   }
