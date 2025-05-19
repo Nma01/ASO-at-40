@@ -1,12 +1,11 @@
-/* Page-specific styles for the About page */
-
 /* About Page Main Content Styles */
-
 
 .hero-split {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  background-color: #fdf6ec;
+  padding: 20px;
 }
 
 .hero-split .text {
@@ -26,6 +25,10 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
+.hero-split .image img {
+  border: 3px solid #d4af37;
+  padding: 4px;
+}
 
 /* media queries */
 @media screen and (min-width: 896px) {

@@ -1,34 +1,41 @@
+/* rsvp Page Main Content Styles */
 
 .hero-split {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fdf6ec;
+  padding: 20px;
+}
+
+.hero-split .text {
+  min-width: 280px;
+}
+
+.hero-split .image {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.hero-split .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-split .image img {
+  border: 3px solid #d4af37;
+  padding: 4px;
+}
+
+/* media queries */
+@media screen and (min-width: 896px) {
+  .hero-split {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
   }
-  
-  .hero-split .text {
-    min-width: 280px;
-  }
-  
-  .hero-split .image {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
-  }
-  
-  .hero-split .image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  
-  /* media queries */
-  @media screen and (min-width: 896px) {
-    .hero-split {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 40px;
-    }
-  }
+}

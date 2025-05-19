@@ -1,6 +1,5 @@
 /* Page-specific styles for the Home page */
 
-/* Hero Section with Image */
 .hero-split {
   display: flex;
   flex-direction: column;
@@ -24,26 +23,25 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-
 /* icons */
 .fas {
-  color: #d4af37; 
-    /*  */
-    color: #003366;
-    color: #013c76;
-    /*  */
-  font-size: 1.0rem; 
+  color: #d4af37;
+  color: #003366;
+  color: #013c76;
+  font-size: 1rem;
   margin-right: 5px;
 }
-.fas:last-child{
+.fas:last-child {
   margin-right: 2px;
 }
-.fas:hover {
-  /* color: #ffd700;  */
+section.hero-split {
+  background-color: #f5f7fa;
+  padding: 20px;
 }
-
-
-
+.fas {
+  color: #d4af37;
+  font-size: 1.1rem;
+}
 
 /* media queries */
 @media screen and (min-width: 896px) {

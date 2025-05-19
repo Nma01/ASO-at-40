@@ -1,45 +1,55 @@
-/* Page-specific styles for the Home page */
+/* Page-specific styles for the Acc page */
 
-/* Hero Section with Image */
-.hero-split {
+.accommodation-wrapper {
+  padding: 20px;
+  border-radius: 10px;
+  margin:  auto;
+}
+
+.accommodation-wrapper h4 {
+  color: #444;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #d4af37;
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+.accommodation-card {
+  background-color: white;
+  border: 1px solid #dce2ec;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.05);
+}
+
+.accommodation-card h5 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.accommodation-card p {
+  color: #013c76;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.accommodation-card a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.accommodation-card a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .accommodation-list {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
   }
-  
-  .hero-split .text {
-    min-width: 280px;
+
+  .accommodation-wrapper {
+    /* margin-top: -30px; */
   }
-  
-  .hero-split .image {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
-  }
-  
-  .hero-split .image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  ul li a {
-    color: #013c76;
-    text-decoration: none;
-  }
- 
-  ul li a:hover{
-    text-decoration: underline;
-  }
-  
-  
-  
-  /* media queries */
-  @media screen and (min-width: 896px) {
-    .hero-split {
-      flex-direction: row;
-      align-items: center;
-      gap: 40px;
-    }
-  }
+}
